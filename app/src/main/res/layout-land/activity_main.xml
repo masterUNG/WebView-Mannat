@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    tools:context="com.virtualsiamu.siamulib.MainActivity"
+    style="@android:style/Widget.WebView"
+    android:background="@drawable/banner_main">
+
+
+    <ImageView
+        android:id="@+id/imageViewHeader"
+        android:layout_width="412dp"
+        android:layout_height="42dp"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/header"
+        android:background="@drawable/header"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageViewFooter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+
+        android:scaleType="fitXY"
+        android:src="@drawable/footer" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageViewFooter"
+
+        android:layout_below="@+id/imageViewHeader"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:background="@drawable/opac"
+                android:baselineAlignBottom="false" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:background="@drawable/online"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DataBases"
+                android:id="@+id/textView" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
